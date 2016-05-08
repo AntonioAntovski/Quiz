@@ -1,0 +1,70 @@
+c:\users\bugi\documents\visual studio 2015\Projects\Quiz\Quiz\bin\Debug\Quiz.exe.config
+c:\users\bugi\documents\visual studio 2015\Projects\Quiz\Quiz\bin\Debug\Quiz.exe
+c:\users\bugi\documents\visual studio 2015\Projects\Quiz\Quiz\bin\Debug\Quiz.pdb
+c:\users\bugi\documents\visual studio 2015\Projects\Quiz\Quiz\obj\Debug\Quiz.csprojResolveAssemblyReference.cache
+c:\users\bugi\documents\visual studio 2015\Projects\Quiz\Quiz\obj\Debug\Quiz.Properties.Resources.resources
+c:\users\bugi\documents\visual studio 2015\Projects\Quiz\Quiz\obj\Debug\Quiz.csproj.GenerateResource.Cache
+c:\users\bugi\documents\visual studio 2015\Projects\Quiz\Quiz\obj\Debug\Quiz.exe
+c:\users\bugi\documents\visual studio 2015\Projects\Quiz\Quiz\obj\Debug\Quiz.pdb
+c:\users\bugi\documents\visual studio 2015\Projects\Quiz\Quiz\obj\Debug\Quiz.Pocetna.resources
+c:\users\bugi\documents\visual studio 2015\Projects\Quiz\Quiz\obj\Debug\Quiz.Asocijacii.resources
+c:\users\bugi\documents\visual studio 2015\Projects\Quiz\Quiz\obj\Debug\Quiz.Matematika.resources
+c:\users\bugi\documents\visual studio 2015\Projects\Quiz\Quiz\obj\Debug\Quiz.Prashanja.resources
+c:\users\bugi\documents\visual studio 2015\Projects\Quiz\Quiz\obj\Debug\Quiz.Spojuvalka.resources
+C:\Users\Bugi\Desktop\Quiz\Quiz\Quiz\bin\Debug\Quiz.exe.config
+C:\Users\Bugi\Desktop\Quiz\Quiz\Quiz\obj\Debug\Quiz.exe
+C:\Users\Bugi\Desktop\Quiz\Quiz\Quiz\obj\Debug\Quiz.pdb
+C:\Users\Bugi\Desktop\Quiz\Quiz\Quiz\bin\Debug\Quiz.exe
+C:\Users\Bugi\Desktop\Quiz\Quiz\Quiz\bin\Debug\Quiz.pdb
+C:\Users\Bugi\Desktop\Quiz\Quiz\Quiz\obj\Debug\Quiz.csprojResolveAssemblyReference.cache
+C:\Users\Bugi\Desktop\Quiz\Quiz\Quiz\obj\Debug\Quiz.Asocijacii.resources
+C:\Users\Bugi\Desktop\Quiz\Quiz\Quiz\obj\Debug\Quiz.Kraj.resources
+C:\Users\Bugi\Desktop\Quiz\Quiz\Quiz\obj\Debug\Quiz.Matematika.resources
+C:\Users\Bugi\Desktop\Quiz\Quiz\Quiz\obj\Debug\Quiz.Pocetna.resources
+C:\Users\Bugi\Desktop\Quiz\Quiz\Quiz\obj\Debug\Quiz.Pogodi.resources
+C:\Users\Bugi\Desktop\Quiz\Quiz\Quiz\obj\Debug\Quiz.Prashanja.resources
+C:\Users\Bugi\Desktop\Quiz\Quiz\Quiz\obj\Debug\Quiz.Properties.Resources.resources
+C:\Users\Bugi\Desktop\Quiz\Quiz\Quiz\obj\Debug\Quiz.Spojuvalka.resources
+C:\Users\Bugi\Desktop\Quiz\Quiz\Quiz\obj\Debug\Quiz.csproj.GenerateResource.Cache
+C:\Users\Bugi\Desktop\Quiz\Quiz\Quiz\obj\Debug\WindowsFormsApplication4.Form1.resources
+C:\Users\Antonio\Documents\Visual Studio 2015\Projects\Quiz\Quiz\bin\Debug\Quiz.exe.config
+C:\Users\Antonio\Documents\Visual Studio 2015\Projects\Quiz\Quiz\obj\Debug\Quiz.exe
+C:\Users\Antonio\Documents\Visual Studio 2015\Projects\Quiz\Quiz\obj\Debug\Quiz.pdb
+C:\Users\Antonio\Documents\Visual Studio 2015\Projects\Quiz\Quiz\obj\Debug\Quiz.csprojResolveAssemblyReference.cache
+C:\Users\Antonio\Documents\Visual Studio 2015\Projects\Quiz\Quiz\obj\Debug\Quiz.Asocijacii.resources
+C:\Users\Antonio\Documents\Visual Studio 2015\Projects\Quiz\Quiz\obj\Debug\Quiz.Kraj.resources
+C:\Users\Antonio\Documents\Visual Studio 2015\Projects\Quiz\Quiz\obj\Debug\Quiz.Matematika.resources
+C:\Users\Antonio\Documents\Visual Studio 2015\Projects\Quiz\Quiz\obj\Debug\Quiz.Pocetna.resources
+C:\Users\Antonio\Documents\Visual Studio 2015\Projects\Quiz\Quiz\obj\Debug\Quiz.Pogodi.resources
+C:\Users\Antonio\Documents\Visual Studio 2015\Projects\Quiz\Quiz\obj\Debug\Quiz.Prashanja.resources
+C:\Users\Antonio\Documents\Visual Studio 2015\Projects\Quiz\Quiz\obj\Debug\Quiz.Properties.Resources.resources
+C:\Users\Antonio\Documents\Visual Studio 2015\Projects\Quiz\Quiz\obj\Debug\Quiz.Spojuvalka.resources
+C:\Users\Antonio\Documents\Visual Studio 2015\Projects\Quiz\Quiz\obj\Debug\Quiz.csproj.GenerateResource.Cache
+C:\Users\Antonio\Documents\Visual Studio 2015\Projects\Quiz\Quiz\obj\Debug\Interop.MSScriptControl.dll
+C:\Users\Antonio\Documents\Visual Studio 2015\Projects\Quiz\Quiz\obj\Debug\Quiz.csproj.ResolveComReference.cache
+C:\Users\Antonio\Documents\Visual Studio 2015\Projects\Quiz\Quiz\bin\Debug\Quiz.exe
+C:\Users\Antonio\Documents\Visual Studio 2015\Projects\Quiz\Quiz\bin\Debug\Quiz.pdb
+C:\Users\Antonio\Documents\Visual Studio 2015\Projects\Quiz\Quiz\obj\Debug\Quiz.Pravila.resources
+D:\Toni\ФИНКИ\IV семестар\Визуелно програмирање\Проектна задача - Квиз\Quiz\Quiz\bin\Debug\Quiz.exe.config
+D:\Toni\ФИНКИ\IV семестар\Визуелно програмирање\Проектна задача - Квиз\Quiz\Quiz\obj\Debug\Interop.MSScriptControl.dll
+D:\Toni\ФИНКИ\IV семестар\Визуелно програмирање\Проектна задача - Квиз\Quiz\Quiz\obj\Debug\Quiz.csproj.ResolveComReference.cache
+D:\Toni\ФИНКИ\IV семестар\Визуелно програмирање\Проектна задача - Квиз\Quiz\Quiz\obj\Debug\Quiz.exe
+D:\Toni\ФИНКИ\IV семестар\Визуелно програмирање\Проектна задача - Квиз\Quiz\Quiz\obj\Debug\Quiz.pdb
+D:\Toni\ФИНКИ\IV семестар\Визуелно програмирање\Проектна задача - Квиз\Quiz\Quiz\bin\Debug\Quiz.exe
+D:\Toni\ФИНКИ\IV семестар\Визуелно програмирање\Проектна задача - Квиз\Quiz\Quiz\bin\Debug\Quiz.pdb
+D:\Toni\ФИНКИ\IV семестар\Визуелно програмирање\Проектна задача - Квиз\Quiz\Quiz\obj\Debug\Quiz.csprojResolveAssemblyReference.cache
+D:\Toni\ФИНКИ\IV семестар\Визуелно програмирање\Проектна задача - Квиз\Quiz\Quiz\obj\Debug\Quiz.Asocijacii.resources
+D:\Toni\ФИНКИ\IV семестар\Визуелно програмирање\Проектна задача - Квиз\Quiz\Quiz\obj\Debug\Quiz.Kraj.resources
+D:\Toni\ФИНКИ\IV семестар\Визуелно програмирање\Проектна задача - Квиз\Quiz\Quiz\obj\Debug\Quiz.Matematika.resources
+D:\Toni\ФИНКИ\IV семестар\Визуелно програмирање\Проектна задача - Квиз\Quiz\Quiz\obj\Debug\Quiz.Pocetna.resources
+D:\Toni\ФИНКИ\IV семестар\Визуелно програмирање\Проектна задача - Квиз\Quiz\Quiz\obj\Debug\Quiz.Pogodi.resources
+D:\Toni\ФИНКИ\IV семестар\Визуелно програмирање\Проектна задача - Квиз\Quiz\Quiz\obj\Debug\Quiz.Prashanja.resources
+D:\Toni\ФИНКИ\IV семестар\Визуелно програмирање\Проектна задача - Квиз\Quiz\Quiz\obj\Debug\Quiz.Pravila.resources
+D:\Toni\ФИНКИ\IV семестар\Визуелно програмирање\Проектна задача - Квиз\Quiz\Quiz\obj\Debug\Quiz.Properties.Resources.resources
+D:\Toni\ФИНКИ\IV семестар\Визуелно програмирање\Проектна задача - Квиз\Quiz\Quiz\obj\Debug\Quiz.Spojuvalka.resources
+D:\Toni\ФИНКИ\IV семестар\Визуелно програмирање\Проектна задача - Квиз\Quiz\Quiz\obj\Debug\Quiz.csproj.GenerateResource.Cache
+D:\Toni\ФИНКИ\IV семестар\Визуелно програмирање\Проектна задача - Квиз\Quiz\bin\Debug\Quiz.exe.config
+D:\Toni\ФИНКИ\IV семестар\Визуелно програмирање\Проектна задача - Квиз\Quiz\obj\Debug\Interop.MSScriptControl.dll
+D:\Toni\ФИНКИ\IV семестар\Визуелно програмирање\Проектна задача - Квиз\Quiz\obj\Debug\Quiz.csproj.ResolveComReference.cache
+D:\Toni\ФИНКИ\IV семестар\Визуелно програмирање\Проектна задача - Квиз\Quiz\obj\Debug\Quiz.exe
+D:\Toni\ФИНКИ\IV семестар\Визуелно програмирање\Проектна задача - Квиз\Quiz\obj\Debug\Quiz.pdb
