@@ -15,6 +15,8 @@ namespace Quiz
         public int points;
         public Prashanja prashanja;
         public string korisnickoIme;
+        private int flag; //flag=0 - kliknata e operacija; flag=1 - kliknat e broj
+
         public Matematika(int points, string ime)
         {
             InitializeComponent();
@@ -23,6 +25,7 @@ namespace Quiz
             lblPoeni.Text = points.ToString();
             btnIzbrisi.Enabled = false;
             btnSledna.Enabled = false;
+            flag = 0;
         }
 
         private void btnStart_Click(object sender, EventArgs e)
@@ -62,83 +65,112 @@ namespace Quiz
 
         private void txtPrv_Click(object sender, EventArgs e)
         {
-            txtResenie.Text += txtPrv.Text;
-            txtPrv.Enabled = false;
+            if (flag != 1)
+            {
+                txtResenie.Text += txtPrv.Text;
+                txtPrv.Enabled = false;
+                flag = 1;
+            }
         }
 
         private void txtVtor_Click(object sender, EventArgs e)
         {
-            txtResenie.Text += txtVtor.Text;
-            txtVtor.Enabled = false;
+            if (flag != 1)
+            {
+                txtResenie.Text += txtVtor.Text;
+                txtVtor.Enabled = false;
+                flag = 1;
+            }
         }
 
         private void txtTret_Click(object sender, EventArgs e)
         {
-            txtResenie.Text += txtTret.Text;
-            txtTret.Enabled = false;
+            if (flag != 1)
+            {
+                txtResenie.Text += txtTret.Text;
+                txtTret.Enabled = false;
+                flag = 1;
+            }
         }
 
         private void txtCetvrti_Click(object sender, EventArgs e)
         {
-            txtResenie.Text += txtCetvrti.Text;
-            txtCetvrti.Enabled = false;
+            if (flag != 1)
+            {
+                txtResenie.Text += txtCetvrti.Text;
+                txtCetvrti.Enabled = false;
+                flag = 1;
+            }
         }
 
         private void txtPetti_Click(object sender, EventArgs e)
         {
-            txtResenie.Text += txtPetti.Text;
-            txtPetti.Enabled = false;
+            if (flag != 1)
+            {
+                txtResenie.Text += txtPetti.Text;
+                txtPetti.Enabled = false;
+                flag = 1;
+            }
         }
 
         private void txtSesti_Click(object sender, EventArgs e)
         {
-            txtResenie.Text += txtSesti.Text;
-            txtSesti.Enabled = false;
+            if (flag != 1)
+            {
+                txtResenie.Text += txtSesti.Text;
+                txtSesti.Enabled = false;
+                flag = 1;
+            }
         }
 
         private void btnPlus_Click(object sender, EventArgs e)
         {
-            if (txtResenie.Text.Length != 0 && txtResenie.Text[txtResenie.Text.Length - 1] != '+' && txtResenie.Text[txtResenie.Text.Length - 1] != '-'
-                && txtResenie.Text[txtResenie.Text.Length - 1] != '*' && txtResenie.Text[txtResenie.Text.Length - 1] != '/'
-                && txtResenie.Text[txtResenie.Text.Length - 1] != '(')
+            if (txtResenie.Text.Length != 0 && flag != 0)
+            {
                 txtResenie.Text += "+";
+                flag = 0;
+            }
         }
 
         private void btnMinus_Click(object sender, EventArgs e)
         {
-            if (txtResenie.Text.Length != 0 && txtResenie.Text[txtResenie.Text.Length - 1] != '+' && txtResenie.Text[txtResenie.Text.Length - 1] != '-'
-                && txtResenie.Text[txtResenie.Text.Length - 1] != '*' && txtResenie.Text[txtResenie.Text.Length - 1] != '/'
-                && txtResenie.Text[txtResenie.Text.Length - 1] != '(')
+            if (txtResenie.Text.Length != 0 && flag != 0)
+            {
                 txtResenie.Text += "-";
+                flag = 0;
+            }
         }
 
         private void btnMnozenje_Click(object sender, EventArgs e)
         {
-            if (txtResenie.Text.Length != 0 && txtResenie.Text[txtResenie.Text.Length - 1] != '+' && txtResenie.Text[txtResenie.Text.Length - 1] != '-'
-                && txtResenie.Text[txtResenie.Text.Length - 1] != '*' && txtResenie.Text[txtResenie.Text.Length - 1] != '/'
-                && txtResenie.Text[txtResenie.Text.Length - 1] != '(')
+            if (txtResenie.Text.Length != 0 && flag != 0)
+            {
                 txtResenie.Text += "*";
+                flag = 0;
+            }
         }
 
         private void btnDelenje_Click(object sender, EventArgs e)
         {
-            if(txtResenie.Text.Length != 0 && txtResenie.Text[txtResenie.Text.Length - 1] != '+' && txtResenie.Text[txtResenie.Text.Length - 1] != '-'
-                && txtResenie.Text[txtResenie.Text.Length - 1] != '*' && txtResenie.Text[txtResenie.Text.Length - 1] != '/'
-                && txtResenie.Text[txtResenie.Text.Length - 1] != '(')
+            if (txtResenie.Text.Length != 0 && flag != 0)
+            {
                 txtResenie.Text += "/";
+                flag = 0;
+            }
         }
 
         private void btnOtvoriZagrada_Click(object sender, EventArgs e)
         {
-            if (txtResenie.Text.Length == 0 || txtResenie.Text[txtResenie.Text.Length - 1] != ')')
+            if (txtResenie.Text.Length == 0 || (txtResenie.Text[txtResenie.Text.Length - 1] != ')' && flag != 1))
+            {
                 txtResenie.Text += "(";
+                flag = 0;
+            }
         }
 
         private void btnZatvoriZagrada_Click(object sender, EventArgs e)
         {
-            if (txtResenie.Text.Length != 0 && txtResenie.Text[txtResenie.Text.Length - 1] != '+' && txtResenie.Text[txtResenie.Text.Length - 1] != '-'
-                && txtResenie.Text[txtResenie.Text.Length - 1] != '*' && txtResenie.Text[txtResenie.Text.Length - 1] != '/'
-                && txtResenie.Text[txtResenie.Text.Length - 1] != '(')
+            if (txtResenie.Text.Length != 0 && flag != 0)
                 txtResenie.Text += ")";
         }
 
@@ -184,6 +216,7 @@ namespace Quiz
             txtCetvrti.Enabled = true;
             txtPetti.Enabled = true;
             txtSesti.Enabled = true;
+            flag = 0;
         }
 
         private void timer1_Tick(object sender, EventArgs e)

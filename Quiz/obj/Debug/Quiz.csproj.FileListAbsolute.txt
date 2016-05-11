@@ -95,3 +95,22 @@ D:\FINKI\IV Семестар\Vizuelno programiranje\proekt\New folder\Quiz\Quiz\
 D:\FINKI\IV Семестар\Vizuelno programiranje\proekt\New folder\Quiz\Quiz\Quiz\obj\Debug\Quiz.csproj.ResolveComReference.cache
 D:\FINKI\IV Семестар\Vizuelno programiranje\proekt\New folder\Quiz\Quiz\Quiz\obj\Debug\Quiz.exe
 D:\FINKI\IV Семестар\Vizuelno programiranje\proekt\New folder\Quiz\Quiz\Quiz\obj\Debug\Quiz.pdb
+C:\Users\Antonio\Desktop\Quiz\Quiz\bin\Debug\Quiz.exe.config
+C:\Users\Antonio\Desktop\Quiz\Quiz\obj\Debug\Interop.MSScriptControl.dll
+C:\Users\Antonio\Desktop\Quiz\Quiz\obj\Debug\Quiz.csproj.ResolveComReference.cache
+C:\Users\Antonio\Desktop\Quiz\Quiz\obj\Debug\Quiz.exe
+C:\Users\Antonio\Desktop\Quiz\Quiz\obj\Debug\Quiz.pdb
+C:\Users\Antonio\Desktop\Quiz\Quiz\bin\Debug\Quiz.exe
+C:\Users\Antonio\Desktop\Quiz\Quiz\bin\Debug\Quiz.pdb
+C:\Users\Antonio\Desktop\Quiz\Quiz\obj\Debug\Quiz.csprojResolveAssemblyReference.cache
+C:\Users\Antonio\Desktop\Quiz\Quiz\obj\Debug\Quiz.Asocijacii.resources
+C:\Users\Antonio\Desktop\Quiz\Quiz\obj\Debug\Quiz.Kraj.resources
+C:\Users\Antonio\Desktop\Quiz\Quiz\obj\Debug\Quiz.Matematika.resources
+C:\Users\Antonio\Desktop\Quiz\Quiz\obj\Debug\Quiz.Pocetna.resources
+C:\Users\Antonio\Desktop\Quiz\Quiz\obj\Debug\Quiz.Pogodi.resources
+C:\Users\Antonio\Desktop\Quiz\Quiz\obj\Debug\Quiz.Prashanja.resources
+C:\Users\Antonio\Desktop\Quiz\Quiz\obj\Debug\Quiz.Pravila.resources
+C:\Users\Antonio\Desktop\Quiz\Quiz\obj\Debug\Quiz.Properties.Resources.resources
+C:\Users\Antonio\Desktop\Quiz\Quiz\obj\Debug\Quiz.Spojuvalka.resources
+C:\Users\Antonio\Desktop\Quiz\Quiz\obj\Debug\Quiz.VnesiIme.resources
+C:\Users\Antonio\Desktop\Quiz\Quiz\obj\Debug\Quiz.csproj.GenerateResource.Cache

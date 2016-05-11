@@ -9,3 +9,5 @@ asd 20
 Ivan 10
 asdasd 115
 asdasd 110
+Антонио 190
+Тони 250
