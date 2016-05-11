@@ -288,6 +288,7 @@ namespace Quiz
             count++;
             if (progressBar1.Value == 100)
             {
+                correct();
                 btnProveri.Enabled = false;
                 btnZapocni.Enabled = false;
                 textBox2.Enabled = false;
