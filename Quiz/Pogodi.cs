@@ -41,6 +41,30 @@ namespace Quiz
             words.Add(word.ToCharArray());
             word = "книга";
             words.Add(word.ToCharArray());
+            word = "злато";
+            words.Add(word.ToCharArray());
+            word = "афион";
+            words.Add(word.ToCharArray());
+            word = "вазна";
+            words.Add(word.ToCharArray());
+            word = "живот";
+            words.Add(word.ToCharArray());
+            word = "земја";
+            words.Add(word.ToCharArray());
+            word = "икона";
+            words.Add(word.ToCharArray());
+            word = "кифла";
+            words.Add(word.ToCharArray());
+            word = "локум";
+            words.Add(word.ToCharArray());
+            word = "љубов";
+            words.Add(word.ToCharArray());
+            word = "опера";
+            words.Add(word.ToCharArray());
+            word = "трева";
+            words.Add(word.ToCharArray());
+            word = "чевли";
+            words.Add(word.ToCharArray());
 
             Random random = new Random();
 
@@ -68,6 +92,14 @@ namespace Quiz
 
         private void button61_Click(object sender, EventArgs e)
         {
+            if (textBox2.Text.Length != 5) {
+                errorProvider1.SetError(textBox2, "Внесете точно 5 букви");
+                return;
+            }
+            else {
+                errorProvider1.SetError(textBox2, "");
+            }
+
             char[] word = textBox2.Text.ToLower().ToCharArray();
 
             if (count == 0)
@@ -83,11 +115,11 @@ namespace Quiz
                 w14.BackColor = getColor(word, 3);
                 w15.BackColor = getColor(word, 4);
 
-                if (w11.BackColor.Equals(Color.Green) &&
-                    w12.BackColor.Equals(Color.Green) &&
-                    w13.BackColor.Equals(Color.Green) &&
-                    w14.BackColor.Equals(Color.Green) &&
-                    w14.BackColor.Equals(Color.Green)) {
+                if (w11.BackColor.Equals(Color.LightGreen) &&
+                    w12.BackColor.Equals(Color.LightGreen) &&
+                    w13.BackColor.Equals(Color.LightGreen) &&
+                    w14.BackColor.Equals(Color.LightGreen) &&
+                    w14.BackColor.Equals(Color.LightGreen)) {
 
                     btnProveri.Enabled = false;
                     btnZapocni.Enabled = false;
@@ -96,6 +128,8 @@ namespace Quiz
                     this.points += 60;
                     lblPoeni.Text = this.points.ToString();
                     progressBar1.Value = 100;
+
+                    correct();
                 }
             }
             if (count == 1)
@@ -111,11 +145,11 @@ namespace Quiz
                 w24.BackColor = getColor(word, 3);
                 w25.BackColor = getColor(word, 4);
 
-                if (w21.BackColor.Equals(Color.Green) &&
-                    w22.BackColor.Equals(Color.Green) &&
-                    w23.BackColor.Equals(Color.Green) &&
-                    w24.BackColor.Equals(Color.Green) &&
-                    w25.BackColor.Equals(Color.Green)) {
+                if (w21.BackColor.Equals(Color.LightGreen) &&
+                    w22.BackColor.Equals(Color.LightGreen) &&
+                    w23.BackColor.Equals(Color.LightGreen) &&
+                    w24.BackColor.Equals(Color.LightGreen) &&
+                    w25.BackColor.Equals(Color.LightGreen)) {
 
                     btnProveri.Enabled = false;
                     btnZapocni.Enabled = false;
@@ -124,6 +158,8 @@ namespace Quiz
                     this.points += 50;
                     lblPoeni.Text = this.points.ToString();
                     progressBar1.Value = 100;
+
+                    correct();
                 }
             }
             if (count == 2)
@@ -139,11 +175,11 @@ namespace Quiz
                 w34.BackColor = getColor(word, 3);
                 w35.BackColor = getColor(word, 4);
 
-                if (w31.BackColor.Equals(Color.Green) &&
-                    w32.BackColor.Equals(Color.Green) &&
-                    w33.BackColor.Equals(Color.Green) &&
-                    w34.BackColor.Equals(Color.Green) &&
-                    w35.BackColor.Equals(Color.Green)) {
+                if (w31.BackColor.Equals(Color.LightGreen) &&
+                    w32.BackColor.Equals(Color.LightGreen) &&
+                    w33.BackColor.Equals(Color.LightGreen) &&
+                    w34.BackColor.Equals(Color.LightGreen) &&
+                    w35.BackColor.Equals(Color.LightGreen)) {
 
                     btnProveri.Enabled = false;
                     btnZapocni.Enabled = false;
@@ -152,6 +188,8 @@ namespace Quiz
                     this.points += 40;
                     lblPoeni.Text = this.points.ToString();
                     progressBar1.Value = 100;
+
+                    correct();
                 }
             }
             if (count == 3)
@@ -167,11 +205,11 @@ namespace Quiz
                 w44.BackColor = getColor(word, 3);
                 w45.BackColor = getColor(word, 4);
 
-                if (w41.BackColor.Equals(Color.Green) &&
-                    w42.BackColor.Equals(Color.Green) &&
-                    w43.BackColor.Equals(Color.Green) &&
-                    w44.BackColor.Equals(Color.Green) &&
-                    w45.BackColor.Equals(Color.Green)) {
+                if (w41.BackColor.Equals(Color.LightGreen) &&
+                    w42.BackColor.Equals(Color.LightGreen) &&
+                    w43.BackColor.Equals(Color.LightGreen) &&
+                    w44.BackColor.Equals(Color.LightGreen) &&
+                    w45.BackColor.Equals(Color.LightGreen)) {
 
                     btnProveri.Enabled = false;
                     btnZapocni.Enabled = false;
@@ -180,6 +218,8 @@ namespace Quiz
                     this.points += 30;
                     lblPoeni.Text = this.points.ToString();
                     progressBar1.Value = 100;
+
+                    correct();
                 }
             }
             if (count == 4)
@@ -195,11 +235,11 @@ namespace Quiz
                 w54.BackColor = getColor(word, 3);
                 w55.BackColor = getColor(word, 4);
 
-                if (w51.BackColor.Equals(Color.Green) &&
-                    w52.BackColor.Equals(Color.Green) &&
-                    w53.BackColor.Equals(Color.Green) &&
-                    w54.BackColor.Equals(Color.Green) &&
-                    w55.BackColor.Equals(Color.Green)) {
+                if (w51.BackColor.Equals(Color.LightGreen) &&
+                    w52.BackColor.Equals(Color.LightGreen) &&
+                    w53.BackColor.Equals(Color.LightGreen) &&
+                    w54.BackColor.Equals(Color.LightGreen) &&
+                    w55.BackColor.Equals(Color.LightGreen)) {
 
                     btnProveri.Enabled = false;
                     btnZapocni.Enabled = false;
@@ -207,6 +247,8 @@ namespace Quiz
                     this.points += 20;
                     lblPoeni.Text = this.points.ToString();
                     progressBar1.Value = 100;
+
+                    correct();
                 }
             }
 
@@ -223,21 +265,20 @@ namespace Quiz
                 w64.BackColor = getColor(word, 3);
                 w65.BackColor = getColor(word, 4);
 
-                if (w61.BackColor.Equals(Color.Green) &&
-                    w62.BackColor.Equals(Color.Green) &&
-                    w63.BackColor.Equals(Color.Green) &&
-                    w64.BackColor.Equals(Color.Green) &&
-                    w65.BackColor.Equals(Color.Green)) {
+                if (w61.BackColor.Equals(Color.LightGreen) &&
+                    w62.BackColor.Equals(Color.LightGreen) &&
+                    w63.BackColor.Equals(Color.LightGreen) &&
+                    w64.BackColor.Equals(Color.LightGreen) &&
+                    w65.BackColor.Equals(Color.LightGreen)) {
 
-                    btnProveri.Enabled = false;
-                    btnZapocni.Enabled = false;
-                    timer1.Stop();
-                    textBox2.Enabled = false;
                     this.points += 10;
                     lblPoeni.Text = this.points.ToString();
-                    progressBar1.Value = 100;
                 }
 
+                textBox2.Enabled = false;
+                btnProveri.Enabled = false;
+                btnZapocni.Enabled = false;
+                correct();
                 btnProveri.Enabled = false;
                 timer1.Stop();
                 progressBar1.Value = 100;
@@ -246,32 +287,34 @@ namespace Quiz
             textBox2.Text = "";
             count++;
             if (progressBar1.Value == 100)
+            {
+                btnProveri.Enabled = false;
+                btnZapocni.Enabled = false;
+                textBox2.Enabled = false;
                 btnSledna.Enabled = true;
+            }
+        }
+
+        public void correct() {
+            button5.Text = guess[0].ToString();
+            button4.Text = guess[1].ToString();
+            button3.Text = guess[2].ToString();
+            button2.Text = guess[3].ToString();
+            button1.Text = guess[4].ToString();
         }
 
         public Color getColor(char[] word, int pos) {
             if (word[pos] == guess[pos])
             {
-                return Color.Green;
+                return Color.LightGreen;
             }
             else if (guess.Contains(word[pos]))
             {
-                return Color.Red;
+                return Color.IndianRed;
             }
             else
             {
-                return Color.Black;
-            }
-        }
-
-        private void textBox2_Validating(object sender, CancelEventArgs e)
-        {
-            if (textBox2.Text.Length != 5)
-            {
-                errorProvider1.SetError(textBox2, "Внесете точно 5 букви");
-            }
-            else {
-                errorProvider1.SetError(textBox2, "");
+                return Color.SkyBlue;
             }
         }
 

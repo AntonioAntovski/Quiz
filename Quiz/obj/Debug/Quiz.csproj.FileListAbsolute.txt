@@ -26,7 +26,6 @@ C:\Users\Bugi\Desktop\Quiz\Quiz\Quiz\obj\Debug\Quiz.Prashanja.resources
 C:\Users\Bugi\Desktop\Quiz\Quiz\Quiz\obj\Debug\Quiz.Properties.Resources.resources
 C:\Users\Bugi\Desktop\Quiz\Quiz\Quiz\obj\Debug\Quiz.Spojuvalka.resources
 C:\Users\Bugi\Desktop\Quiz\Quiz\Quiz\obj\Debug\Quiz.csproj.GenerateResource.Cache
-C:\Users\Bugi\Desktop\Quiz\Quiz\Quiz\obj\Debug\WindowsFormsApplication4.Form1.resources
 C:\Users\Antonio\Documents\Visual Studio 2015\Projects\Quiz\Quiz\bin\Debug\Quiz.exe.config
 C:\Users\Antonio\Documents\Visual Studio 2015\Projects\Quiz\Quiz\obj\Debug\Quiz.exe
 C:\Users\Antonio\Documents\Visual Studio 2015\Projects\Quiz\Quiz\obj\Debug\Quiz.pdb
@@ -87,3 +86,7 @@ C:\Users\DARKO\Desktop\Quiz\Quiz\obj\Debug\Quiz.Properties.Resources.resources
 C:\Users\DARKO\Desktop\Quiz\Quiz\obj\Debug\Quiz.Spojuvalka.resources
 C:\Users\DARKO\Desktop\Quiz\Quiz\obj\Debug\Quiz.csproj.GenerateResource.Cache
 C:\Users\DARKO\Desktop\Quiz\Quiz\obj\Debug\Quiz.VnesiIme.resources
+C:\Users\Bugi\Desktop\Quiz\Quiz\Quiz\obj\Debug\Interop.MSScriptControl.dll
+C:\Users\Bugi\Desktop\Quiz\Quiz\Quiz\obj\Debug\Quiz.csproj.ResolveComReference.cache
+C:\Users\Bugi\Desktop\Quiz\Quiz\Quiz\obj\Debug\Quiz.Pravila.resources
+C:\Users\Bugi\Desktop\Quiz\Quiz\Quiz\obj\Debug\Quiz.VnesiIme.resources

@@ -48,38 +48,58 @@
             // 
             // odg1
             // 
+            this.odg1.BackColor = System.Drawing.Color.White;
+            this.odg1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SkyBlue;
+            this.odg1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.odg1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.odg1.ForeColor = System.Drawing.SystemColors.Highlight;
             this.odg1.Location = new System.Drawing.Point(6, 31);
             this.odg1.Name = "odg1";
             this.odg1.Size = new System.Drawing.Size(680, 36);
             this.odg1.TabIndex = 0;
-            this.odg1.UseVisualStyleBackColor = true;
+            this.odg1.UseVisualStyleBackColor = false;
             this.odg1.Click += new System.EventHandler(this.odg1_Click);
             // 
             // odg2
             // 
+            this.odg2.BackColor = System.Drawing.Color.White;
+            this.odg2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SkyBlue;
+            this.odg2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.odg2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.odg2.ForeColor = System.Drawing.SystemColors.Highlight;
             this.odg2.Location = new System.Drawing.Point(6, 73);
             this.odg2.Name = "odg2";
             this.odg2.Size = new System.Drawing.Size(680, 36);
             this.odg2.TabIndex = 1;
-            this.odg2.UseVisualStyleBackColor = true;
+            this.odg2.UseVisualStyleBackColor = false;
             this.odg2.Click += new System.EventHandler(this.odg2_Click);
             // 
             // odg3
             // 
+            this.odg3.BackColor = System.Drawing.Color.White;
+            this.odg3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SkyBlue;
+            this.odg3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.odg3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.odg3.ForeColor = System.Drawing.SystemColors.Highlight;
             this.odg3.Location = new System.Drawing.Point(6, 115);
             this.odg3.Name = "odg3";
             this.odg3.Size = new System.Drawing.Size(680, 36);
             this.odg3.TabIndex = 2;
-            this.odg3.UseVisualStyleBackColor = true;
+            this.odg3.UseVisualStyleBackColor = false;
             this.odg3.Click += new System.EventHandler(this.odg3_Click);
             // 
             // odg4
             // 
+            this.odg4.BackColor = System.Drawing.Color.White;
+            this.odg4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SkyBlue;
+            this.odg4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.odg4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.odg4.ForeColor = System.Drawing.SystemColors.Highlight;
             this.odg4.Location = new System.Drawing.Point(6, 157);
             this.odg4.Name = "odg4";
             this.odg4.Size = new System.Drawing.Size(680, 36);
             this.odg4.TabIndex = 3;
-            this.odg4.UseVisualStyleBackColor = true;
+            this.odg4.UseVisualStyleBackColor = false;
             this.odg4.Click += new System.EventHandler(this.odg4_Click);
             // 
             // groupBox3
@@ -90,15 +110,14 @@
             this.groupBox3.Size = new System.Drawing.Size(692, 128);
             this.groupBox3.TabIndex = 14;
             this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Прашање";
             // 
             // lblPrashanje
             // 
             this.lblPrashanje.AutoSize = true;
-            this.lblPrashanje.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F);
+            this.lblPrashanje.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPrashanje.Location = new System.Drawing.Point(6, 26);
             this.lblPrashanje.Name = "lblPrashanje";
-            this.lblPrashanje.Size = new System.Drawing.Size(0, 29);
+            this.lblPrashanje.Size = new System.Drawing.Size(0, 25);
             this.lblPrashanje.TabIndex = 0;
             // 
             // progressBar1
@@ -125,7 +144,6 @@
             this.groupBox1.Size = new System.Drawing.Size(692, 199);
             this.groupBox1.TabIndex = 16;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Одговори";
             // 
             // label1
             // 
@@ -138,30 +156,37 @@
             // 
             // btnSledna
             // 
+            this.btnSledna.BackColor = System.Drawing.Color.White;
+            this.btnSledna.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SkyBlue;
+            this.btnSledna.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSledna.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSledna.ForeColor = System.Drawing.SystemColors.Highlight;
             this.btnSledna.Location = new System.Drawing.Point(452, 433);
             this.btnSledna.Name = "btnSledna";
             this.btnSledna.Size = new System.Drawing.Size(246, 34);
             this.btnSledna.TabIndex = 18;
             this.btnSledna.Text = "Следна игра";
-            this.btnSledna.UseVisualStyleBackColor = true;
+            this.btnSledna.UseVisualStyleBackColor = false;
             this.btnSledna.Click += new System.EventHandler(this.btnSledna_Click);
             // 
             // lblPoeni
             // 
             this.lblPoeni.AutoSize = true;
-            this.lblPoeni.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPoeni.Location = new System.Drawing.Point(638, 349);
+            this.lblPoeni.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPoeni.Location = new System.Drawing.Point(634, 353);
             this.lblPoeni.Name = "lblPoeni";
-            this.lblPoeni.Size = new System.Drawing.Size(0, 24);
+            this.lblPoeni.Size = new System.Drawing.Size(0, 16);
             this.lblPoeni.TabIndex = 19;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.BackColor = System.Drawing.Color.White;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.Highlight;
             this.label2.Location = new System.Drawing.Point(575, 353);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(61, 20);
+            this.label2.Size = new System.Drawing.Size(53, 16);
             this.label2.TabIndex = 20;
             this.label2.Text = "Поени:";
             // 
@@ -169,6 +194,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(710, 479);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.lblPoeni);
@@ -176,10 +202,12 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.progressBar1);
+            this.ForeColor = System.Drawing.SystemColors.Highlight;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Prashanja";
+            this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Прашања";
             this.groupBox3.ResumeLayout(false);

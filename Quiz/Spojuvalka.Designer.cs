@@ -40,7 +40,9 @@
             // 
             // lstLevo
             // 
+            this.lstLevo.BackColor = System.Drawing.Color.White;
             this.lstLevo.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lstLevo.ForeColor = System.Drawing.SystemColors.Highlight;
             this.lstLevo.FormattingEnabled = true;
             this.lstLevo.ItemHeight = 29;
             this.lstLevo.Location = new System.Drawing.Point(12, 86);
@@ -51,7 +53,9 @@
             // 
             // lstDesno
             // 
+            this.lstDesno.BackColor = System.Drawing.Color.White;
             this.lstDesno.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lstDesno.ForeColor = System.Drawing.SystemColors.Highlight;
             this.lstDesno.FormattingEnabled = true;
             this.lstDesno.ItemHeight = 29;
             this.lstDesno.Location = new System.Drawing.Point(431, 86);
@@ -63,36 +67,43 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(12, 428);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(61, 20);
+            this.label1.Size = new System.Drawing.Size(53, 16);
             this.label1.TabIndex = 2;
             this.label1.Text = "Поени:";
             // 
             // lblPoeni
             // 
             this.lblPoeni.AutoSize = true;
-            this.lblPoeni.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPoeni.Location = new System.Drawing.Point(80, 424);
+            this.lblPoeni.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPoeni.Location = new System.Drawing.Point(71, 428);
             this.lblPoeni.Name = "lblPoeni";
-            this.lblPoeni.Size = new System.Drawing.Size(20, 24);
+            this.lblPoeni.Size = new System.Drawing.Size(15, 16);
             this.lblPoeni.TabIndex = 3;
             this.lblPoeni.Text = "0";
             // 
             // btnNextGame
             // 
+            this.btnNextGame.BackColor = System.Drawing.Color.White;
+            this.btnNextGame.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SkyBlue;
+            this.btnNextGame.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnNextGame.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNextGame.ForeColor = System.Drawing.SystemColors.Highlight;
             this.btnNextGame.Location = new System.Drawing.Point(587, 428);
             this.btnNextGame.Name = "btnNextGame";
             this.btnNextGame.Size = new System.Drawing.Size(111, 39);
             this.btnNextGame.TabIndex = 4;
             this.btnNextGame.Text = "Следна игра";
-            this.btnNextGame.UseVisualStyleBackColor = true;
+            this.btnNextGame.UseVisualStyleBackColor = false;
             this.btnNextGame.Click += new System.EventHandler(this.btnNextGame_Click);
             // 
             // txtBoxSign
             // 
+            this.txtBoxSign.BackColor = System.Drawing.Color.White;
             this.txtBoxSign.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBoxSign.ForeColor = System.Drawing.SystemColors.Highlight;
             this.txtBoxSign.Location = new System.Drawing.Point(294, 86);
             this.txtBoxSign.Multiline = true;
             this.txtBoxSign.Name = "txtBoxSign";
@@ -103,8 +114,10 @@
             // 
             // txtBoxOpis
             // 
+            this.txtBoxOpis.BackColor = System.Drawing.Color.White;
             this.txtBoxOpis.Enabled = false;
             this.txtBoxOpis.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBoxOpis.ForeColor = System.Drawing.SystemColors.Highlight;
             this.txtBoxOpis.Location = new System.Drawing.Point(84, 5);
             this.txtBoxOpis.Multiline = true;
             this.txtBoxOpis.Name = "txtBoxOpis";
@@ -113,19 +126,24 @@
             // 
             // btnPravila
             // 
-            this.btnPravila.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPravila.BackColor = System.Drawing.Color.White;
+            this.btnPravila.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SkyBlue;
+            this.btnPravila.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPravila.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPravila.ForeColor = System.Drawing.SystemColors.Highlight;
             this.btnPravila.Location = new System.Drawing.Point(12, 46);
             this.btnPravila.Name = "btnPravila";
             this.btnPravila.Size = new System.Drawing.Size(105, 34);
             this.btnPravila.TabIndex = 7;
             this.btnPravila.Text = "Правила";
-            this.btnPravila.UseVisualStyleBackColor = true;
+            this.btnPravila.UseVisualStyleBackColor = false;
             this.btnPravila.Click += new System.EventHandler(this.btnPravila_Click);
             // 
             // Spojuvalka
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(710, 479);
             this.Controls.Add(this.btnPravila);
             this.Controls.Add(this.txtBoxOpis);
@@ -135,10 +153,12 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lstDesno);
             this.Controls.Add(this.lstLevo);
+            this.ForeColor = System.Drawing.SystemColors.Highlight;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Spojuvalka";
+            this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Спојувалка";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);

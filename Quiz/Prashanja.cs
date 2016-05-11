@@ -27,12 +27,36 @@ namespace Quiz
             lblPoeni.Text = points.ToString();
             timer1.Start();
             count = 1;
-            randomQuest = RandomValues(11, 0, 12);
+            randomQuest = RandomValues(11, 0, 18);
 
             questions = new Dictionary<string, Answers>();
 
-            string question = "Кои две планети се соседни на Земјата?";
-            Answers a = new Answers("Марс и Венера", "Сатурн и Јупитер", "Марс и Јупитер", "Уран и Плутон");
+            string question = "Кој фудбалски голман постигнал најмногу голови во својата кариера?";
+            Answers a = new Answers("Рожерио Сени", "Хозе Луис Чилаверт", "Рене Игита", "Хорхе Кампос");
+            questions.Add(question, a);
+
+            question = "Кој актер ја толкуваше улогата на доктор Џек Шепард\n во серискиот филм Изгубени?";
+            a = new Answers("Метју Фокс", "Џош Холовеј", "Тери О'Квин", "Доминик Монаган");
+            questions.Add(question, a);
+
+            question = "Кој од следниве зборови претставува пејоратив?";
+            a = new Answers("ушле", "усте", "носе", "раче");
+            questions.Add(question, a);
+
+            question = "Која е родната земја на познатите морепловци \nФернандо Магелан и Васко де Гама?";
+            a = new Answers("Португалија", "Шпанија", "Италија", "Аргентина");
+            questions.Add(question, a);
+
+            question = "Која друга планета, покрај Меркур, нема ниту \nеден природен сателит?";
+            a = new Answers("Венера", "Марс", "Јупитер", "Сатурн");
+            questions.Add(question, a);
+
+            question = "Во кој германски град се одржува најголемиот светски саем на книгата?";
+            a = new Answers("Франкфурт", "Хамбург", "Минхен", "Дортмунд");
+            questions.Add(question, a);
+
+            question = "Кои две планети се соседни на Земјата?";
+            a = new Answers("Марс и Венера", "Сатурн и Јупитер", "Марс и Јупитер", "Уран и Плутон");
             questions.Add(question, a);
 
             question = "Бројот кој содржи имагинарен и реален дел се вика...";
