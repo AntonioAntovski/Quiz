@@ -27,7 +27,7 @@ namespace Quiz
 
         private void button3_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Environment.Exit(0);
         }
     }
 }
