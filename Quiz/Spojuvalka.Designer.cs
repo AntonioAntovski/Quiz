@@ -40,62 +40,63 @@
             // 
             // lstLevo
             // 
-            this.lstLevo.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lstLevo.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lstLevo.FormattingEnabled = true;
-            this.lstLevo.ItemHeight = 25;
+            this.lstLevo.ItemHeight = 29;
             this.lstLevo.Location = new System.Drawing.Point(12, 86);
             this.lstLevo.Name = "lstLevo";
-            this.lstLevo.Size = new System.Drawing.Size(230, 254);
+            this.lstLevo.Size = new System.Drawing.Size(276, 323);
             this.lstLevo.TabIndex = 0;
             this.lstLevo.SelectedIndexChanged += new System.EventHandler(this.lstLevo_SelectedIndexChanged);
             // 
             // lstDesno
             // 
-            this.lstDesno.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lstDesno.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lstDesno.FormattingEnabled = true;
-            this.lstDesno.ItemHeight = 25;
-            this.lstDesno.Location = new System.Drawing.Point(360, 86);
+            this.lstDesno.ItemHeight = 29;
+            this.lstDesno.Location = new System.Drawing.Point(431, 86);
             this.lstDesno.Name = "lstDesno";
-            this.lstDesno.Size = new System.Drawing.Size(230, 254);
+            this.lstDesno.Size = new System.Drawing.Size(276, 323);
             this.lstDesno.TabIndex = 1;
             this.lstDesno.SelectedIndexChanged += new System.EventHandler(this.lstDesno_SelectedIndexChanged);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(33, 362);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(12, 428);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(42, 13);
+            this.label1.Size = new System.Drawing.Size(61, 20);
             this.label1.TabIndex = 2;
             this.label1.Text = "Поени:";
             // 
             // lblPoeni
             // 
             this.lblPoeni.AutoSize = true;
-            this.lblPoeni.Location = new System.Drawing.Point(95, 362);
+            this.lblPoeni.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPoeni.Location = new System.Drawing.Point(80, 424);
             this.lblPoeni.Name = "lblPoeni";
-            this.lblPoeni.Size = new System.Drawing.Size(13, 13);
+            this.lblPoeni.Size = new System.Drawing.Size(20, 24);
             this.lblPoeni.TabIndex = 3;
             this.lblPoeni.Text = "0";
             // 
             // btnNextGame
             // 
-            this.btnNextGame.Location = new System.Drawing.Point(479, 346);
+            this.btnNextGame.Location = new System.Drawing.Point(587, 428);
             this.btnNextGame.Name = "btnNextGame";
             this.btnNextGame.Size = new System.Drawing.Size(111, 39);
             this.btnNextGame.TabIndex = 4;
             this.btnNextGame.Text = "Следна игра";
             this.btnNextGame.UseVisualStyleBackColor = true;
-            this.btnNextGame.Visible = false;
             this.btnNextGame.Click += new System.EventHandler(this.btnNextGame_Click);
             // 
             // txtBoxSign
             // 
-            this.txtBoxSign.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBoxSign.Location = new System.Drawing.Point(248, 86);
+            this.txtBoxSign.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBoxSign.Location = new System.Drawing.Point(294, 86);
             this.txtBoxSign.Multiline = true;
             this.txtBoxSign.Name = "txtBoxSign";
-            this.txtBoxSign.Size = new System.Drawing.Size(106, 254);
+            this.txtBoxSign.Size = new System.Drawing.Size(131, 323);
             this.txtBoxSign.TabIndex = 5;
             this.txtBoxSign.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txtBoxSign.Visible = false;
@@ -104,7 +105,7 @@
             // 
             this.txtBoxOpis.Enabled = false;
             this.txtBoxOpis.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBoxOpis.Location = new System.Drawing.Point(12, 5);
+            this.txtBoxOpis.Location = new System.Drawing.Point(84, 5);
             this.txtBoxOpis.Multiline = true;
             this.txtBoxOpis.Name = "txtBoxOpis";
             this.txtBoxOpis.Size = new System.Drawing.Size(555, 35);
@@ -125,7 +126,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(596, 397);
+            this.ClientSize = new System.Drawing.Size(710, 479);
             this.Controls.Add(this.btnPravila);
             this.Controls.Add(this.txtBoxOpis);
             this.Controls.Add(this.txtBoxSign);
@@ -138,6 +139,7 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Spojuvalka";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Спојувалка";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             this.ResumeLayout(false);

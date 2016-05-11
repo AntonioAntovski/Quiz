@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -16,12 +17,13 @@ namespace Quiz
         public int points;
         private int obidi;
         public Kraj kraj;
-
-        public Asocijacii(int points)
+        public string korisnickoIme;
+        public Asocijacii(int points, string ime)
         {
             InitializeComponent();
+            korisnickoIme = ime;
             this.points = points;
-            txtPoeni.Text = points.ToString();
+            lblPoeni.Text = points.ToString();
             string[] a11 = { "СПОРТСКИ", "БРОЈ", "МАИЦА", "РЕПРЕЗЕНТАЦИЈА", "ДРЕС" };
             string[] b11 = { "ИТАЛИЈА", "ТАЈНАТА ВЕЧЕРА", "МОНА ЛИЗА", "РЕНЕСАНСА", "ДА ВИНЧИ" };
             string[] v11 = { "УЛИЦА", "БРОЈ", "IP", "URL", "АДРЕСА" };
@@ -178,7 +180,7 @@ namespace Quiz
                     A.Visible = true;
                     A.Text = konecna.A[4];
                     points += 5;
-                    txtPoeni.Text = points.ToString();
+                    lblPoeni.Text = points.ToString();
                     obidi++;
                 }
                 else
@@ -205,7 +207,7 @@ namespace Quiz
                     B.Visible = true;
                     B.Text = konecna.B[4];
                     points += 5;
-                    txtPoeni.Text = points.ToString();
+                    lblPoeni.Text = points.ToString();
                     obidi++;
                 }
                 else
@@ -232,7 +234,7 @@ namespace Quiz
                     V.Visible = true;
                     V.Text = konecna.V[4];
                     points += 5;
-                    txtPoeni.Text = points.ToString();
+                    lblPoeni.Text = points.ToString();
                     obidi++;
                 }
                 else
@@ -259,7 +261,7 @@ namespace Quiz
                     G.Visible = true;
                     G.Text = konecna.G[4];
                     points += 5;
-                    txtPoeni.Text = points.ToString();
+                    lblPoeni.Text = points.ToString();
                     obidi++;
                 }
                 else
@@ -339,7 +341,7 @@ namespace Quiz
                         points += 15;
                     else
                         points += 10;
-                    txtPoeni.Text = points.ToString();
+                    lblPoeni.Text = points.ToString();
                     progressBar1.Value = 100;
                 }
                 else
@@ -350,9 +352,9 @@ namespace Quiz
         private void timer1_Tick(object sender, EventArgs e)
         {
             progressBar1.Increment(1);
-            if(progressBar1.Value == 100 && txtPoeni.Text == "")
+            if(progressBar1.Value == 100 && lblPoeni.Text == "")
             {
-                txtPoeni.Text = "0";
+                lblPoeni.Text = "0";
                 this.points = 0;
             }
         }
@@ -360,7 +362,18 @@ namespace Quiz
         private void btnKraj_Click(object sender, EventArgs e)
         {
             this.Hide();
-            kraj = new Kraj(this.points);
+            
+            string file_name = "rezultati.txt";
+
+            StreamWriter objWriter;
+
+            objWriter = new System.IO.StreamWriter(file_name, true);
+          
+            objWriter.WriteLine(korisnickoIme + " " + lblPoeni.Text);
+
+            objWriter.Close();
+
+            kraj = new Kraj();
             kraj.Show();
         }
     }

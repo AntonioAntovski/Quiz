@@ -30,8 +30,9 @@
         {
             this.components = new System.ComponentModel.Container();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.lblPoeni = new System.Windows.Forms.Label();
+            this.btnSledna = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
             this.btnZapocni = new System.Windows.Forms.Button();
             this.w65 = new System.Windows.Forms.Button();
             this.w64 = new System.Windows.Forms.Button();
@@ -70,16 +71,15 @@
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.timer2 = new System.Windows.Forms.Timer(this.components);
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
-            this.btnSledna = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.lblPoeni);
             this.groupBox1.Controls.Add(this.btnSledna);
             this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.textBox3);
             this.groupBox1.Controls.Add(this.btnZapocni);
             this.groupBox1.Controls.Add(this.w65);
             this.groupBox1.Controls.Add(this.w64);
@@ -120,24 +120,34 @@
             this.groupBox1.Size = new System.Drawing.Size(694, 455);
             this.groupBox1.TabIndex = 23;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Player1";
+            // 
+            // lblPoeni
+            // 
+            this.lblPoeni.AutoSize = true;
+            this.lblPoeni.Location = new System.Drawing.Point(632, 367);
+            this.lblPoeni.Name = "lblPoeni";
+            this.lblPoeni.Size = new System.Drawing.Size(0, 13);
+            this.lblPoeni.TabIndex = 88;
+            // 
+            // btnSledna
+            // 
+            this.btnSledna.Location = new System.Drawing.Point(18, 343);
+            this.btnSledna.Name = "btnSledna";
+            this.btnSledna.Size = new System.Drawing.Size(248, 42);
+            this.btnSledna.TabIndex = 87;
+            this.btnSledna.Text = "Следна игра";
+            this.btnSledna.UseVisualStyleBackColor = true;
+            this.btnSledna.Click += new System.EventHandler(this.btnSledna_Click);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(584, 367);
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(572, 368);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(42, 13);
+            this.label3.Size = new System.Drawing.Size(61, 20);
             this.label3.TabIndex = 86;
             this.label3.Text = "Поени:";
-            // 
-            // textBox3
-            // 
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(632, 355);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(56, 30);
-            this.textBox3.TabIndex = 85;
             // 
             // btnZapocni
             // 
@@ -464,16 +474,6 @@
             // 
             this.errorProvider1.ContainerControl = this;
             // 
-            // btnSledna
-            // 
-            this.btnSledna.Location = new System.Drawing.Point(18, 343);
-            this.btnSledna.Name = "btnSledna";
-            this.btnSledna.Size = new System.Drawing.Size(248, 42);
-            this.btnSledna.TabIndex = 87;
-            this.btnSledna.Text = "Следна игра";
-            this.btnSledna.UseVisualStyleBackColor = true;
-            this.btnSledna.Click += new System.EventHandler(this.btnSledna_Click);
-            // 
             // Pogodi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -484,7 +484,8 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Pogodi";
-            this.Text = "Pogodi";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Погоди";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
@@ -533,8 +534,8 @@
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Timer timer2;
         private System.Windows.Forms.ErrorProvider errorProvider1;
-        private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btnSledna;
+        private System.Windows.Forms.Label lblPoeni;
     }
 }

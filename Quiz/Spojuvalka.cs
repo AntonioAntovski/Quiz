@@ -12,11 +12,12 @@ namespace Quiz
         private  List<Poim> kraj2;
         public int points;
         public Asocijacii asocijacii;
-
-        public Spojuvalka(int points)
+        public string korisnickoIme;
+        public Spojuvalka(int points, string ime)
         {
             this.StartPosition = FormStartPosition.CenterScreen;
             InitializeComponent();
+            korisnickoIme = ime;
             this.points = points;
             lblPoeni.Text = points.ToString();
             Random rand = new Random();
@@ -288,23 +289,22 @@ namespace Quiz
                             lstLevo.Items.AddRange(kraj1.ToArray());
                             lstDesno.Items.AddRange(kraj2.ToArray());
                             txtBoxSign.Text =
-                                "<=======>\n" +
-                                "<=======>\n" +
-                                "<=======>\n" +
-                                "<=======>\n" +
-                                "<=======>\n" +
-                                "<=======>\n" +
-                                "<=======>\n" +
-                                "<=======>\n" +
-                                "<=======>\n" +
-                                "<=======>";
+                                "<======>\n" +
+                                "<======>\n" +
+                                "<======>\n" +
+                                "<======>\n" +
+                                "<======>\n" +
+                                "<======>\n" +
+                                "<======>\n" +
+                                "<======>\n" +
+                                "<======>\n" +
+                                "<======>";
                             txtBoxOpis.Visible = false;
                             btnPravila.Visible = false;
                             txtBoxSign.Visible = true;
                             txtBoxSign.Enabled = false;
                             lstLevo.Enabled = false;
                             lstDesno.Enabled = false;
-                            btnNextGame.Visible = true;
                         }
                 }
                 else
@@ -361,7 +361,7 @@ namespace Quiz
         private void btnNextGame_Click(object sender, EventArgs e)
         {
             this.Hide();
-            asocijacii = new Asocijacii(this.points);
+            asocijacii = new Asocijacii(this.points, this.korisnickoIme);
             asocijacii.Show();
         }
     }

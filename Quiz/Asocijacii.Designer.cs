@@ -58,8 +58,8 @@
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.label2 = new System.Windows.Forms.Label();
-            this.txtPoeni = new System.Windows.Forms.TextBox();
             this.btnKraj = new System.Windows.Forms.Button();
+            this.lblPoeni = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnA1
@@ -355,21 +355,11 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label2.Location = new System.Drawing.Point(497, 26);
+            this.label2.Location = new System.Drawing.Point(574, 26);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(127, 20);
+            this.label2.Size = new System.Drawing.Size(61, 20);
             this.label2.TabIndex = 35;
-            this.label2.Text = "Освоени поени:";
-            // 
-            // txtPoeni
-            // 
-            this.txtPoeni.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.txtPoeni.Location = new System.Drawing.Point(630, 15);
-            this.txtPoeni.Multiline = true;
-            this.txtPoeni.Name = "txtPoeni";
-            this.txtPoeni.ReadOnly = true;
-            this.txtPoeni.Size = new System.Drawing.Size(64, 31);
-            this.txtPoeni.TabIndex = 34;
+            this.label2.Text = "Поени:";
             // 
             // btnKraj
             // 
@@ -381,14 +371,24 @@
             this.btnKraj.UseVisualStyleBackColor = true;
             this.btnKraj.Click += new System.EventHandler(this.btnKraj_Click);
             // 
+            // lblPoeni
+            // 
+            this.lblPoeni.AutoSize = true;
+            this.lblPoeni.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPoeni.Location = new System.Drawing.Point(630, 22);
+            this.lblPoeni.Name = "lblPoeni";
+            this.lblPoeni.Size = new System.Drawing.Size(60, 24);
+            this.lblPoeni.TabIndex = 37;
+            this.lblPoeni.Text = "label1";
+            // 
             // Asocijacii
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(710, 479);
+            this.Controls.Add(this.lblPoeni);
             this.Controls.Add(this.btnKraj);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.txtPoeni);
             this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.Konecno);
             this.Controls.Add(this.txtKonecno);
@@ -458,7 +458,7 @@
         private System.Windows.Forms.ProgressBar progressBar1;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtPoeni;
         private System.Windows.Forms.Button btnKraj;
+        private System.Windows.Forms.Label lblPoeni;
     }
 }

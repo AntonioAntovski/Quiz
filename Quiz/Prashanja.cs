@@ -17,12 +17,14 @@ namespace Quiz
         int count;
         List<int> randomQuest;
         public Spojuvalka spojuvalka;
-
-        public Prashanja(int points)
+        public string korisnickoIme;
+        public Prashanja(int points,string ime)
         {
             InitializeComponent();
+            korisnickoIme = ime;
+            btnSledna.Enabled = false;
             this.points = points;
-            pointsBox.Text = points.ToString();
+            lblPoeni.Text = points.ToString();
             timer1.Start();
             count = 1;
             randomQuest = RandomValues(11, 0, 12);
@@ -49,19 +51,19 @@ namespace Quiz
             a = new Answers("аденозин трифосфат", "јаглерод диоксид", "кислород", "хлорофил");
             questions.Add(question, a);
 
-            question = "Како се нарекува сликата изработена од разнобојни камчиња на подлога од малтер";
+            question = "Како се нарекува сликата изработена од разнобојни камчиња на подлога од малтер?";
             a = new Answers("мозаик", "витраж", "колаж", "мурал");
             questions.Add(question, a);
 
-            question = "Која од следниве хидроцентрали не е дел од хидросистемот Маврово";
+            question = "Која од следниве хидроцентрали не е дел од хидросистемот Маврово?";
             a = new Answers("Шпиље", "Вруток", "Врбен", "Равен");
             questions.Add(question, a);
 
-            question = "Колку степени според Келвиновата скала изнесува апсолутната нула";
+            question = "Колку степени според Келвиновата скала изнесува апсолутната нула?";
             a = new Answers("0", "273", "-273", "27,3");
             questions.Add(question, a);
 
-            question = "Од каде е донесен компирот во Европа";
+            question = "Од каде е донесен компирот во Европа?";
             a = new Answers("Јужна Америка", "Источна Азија", "Северна Америка", "Јужна Азија");
             questions.Add(question, a);
 
@@ -73,13 +75,15 @@ namespace Quiz
             a = new Answers("Швајцарија", "Словачка", "Финска", "Португалија");
             questions.Add(question, a);
 
-            question = "Кој од следниве актери не е дете на добитник на Оскар";
+            question = "Кој од следниве актери не е дете на добитник на Оскар?";
             a = new Answers("Чарли Шин", "Кејт Хадсон", "Анџелина Џоли", "Џејн Фонда");
             questions.Add(question, a);
 
-            List<string> quest = new List<string>(questions.Keys);
-            lblPrashanje.Text = quest[randomQuest[count]];
 
+            List<string> quest = new List<string>(questions.Keys);
+            lblPrashanje.Font = new Font("Microsoft Sans Serif", 12);
+            lblPrashanje.Text = quest[randomQuest[count]];
+            
             Answers tmp = questions[lblPrashanje.Text];
             List<string> ans = tmp.getAnswers();
             List<int> randoms = RandomValues(4, 0, 4);
@@ -102,7 +106,8 @@ namespace Quiz
                 odg2.Enabled = false;
                 odg3.Enabled = false;
                 odg4.Enabled = false;
-
+                btnSledna.Enabled = true;
+                progressBar1.Value = 100;
                 timer1.Stop();
             }
             else {
@@ -117,6 +122,8 @@ namespace Quiz
                 odg2.Text = value[randoms[1]];
                 odg3.Text = value[randoms[2]];
                 odg4.Text = value[randoms[3]];
+                if (progressBar1.Value == 100)
+                    btnSledna.Enabled = true;
             }
         }
 
@@ -144,11 +151,11 @@ namespace Quiz
 
             if (odg1.Text.Equals(str)) {
                 points += 10;
-                pointsBox.Text = (short.Parse(pointsBox.Text) + 10).ToString();
+                lblPoeni.Text = (short.Parse(lblPoeni.Text) + 10).ToString();
             }
             else {
                 points -= 5;
-                pointsBox.Text = (short.Parse(pointsBox.Text) - 5).ToString();
+                lblPoeni.Text = (short.Parse(lblPoeni.Text) - 5).ToString();
             }
 
             Check();
@@ -162,11 +169,11 @@ namespace Quiz
             if (odg2.Text.Equals(str))
             {
                 points += 10;
-                pointsBox.Text = (short.Parse(pointsBox.Text) + 10).ToString();
+                lblPoeni.Text = (short.Parse(lblPoeni.Text) + 10).ToString();
             }
             else {
                 points -= 5;
-                pointsBox.Text = (short.Parse(pointsBox.Text) - 5).ToString();
+                lblPoeni.Text = (short.Parse(lblPoeni.Text) - 5).ToString();
             }
 
             Check();
@@ -180,11 +187,11 @@ namespace Quiz
             if (odg3.Text.Equals(str))
             {
                 points += 10;
-                pointsBox.Text = (short.Parse(pointsBox.Text) + 10).ToString();
+                lblPoeni.Text = (short.Parse(lblPoeni.Text) + 10).ToString();
             }
             else {
                 points -= 5;
-                pointsBox.Text = (short.Parse(pointsBox.Text) - 5).ToString();
+                lblPoeni.Text = (short.Parse(lblPoeni.Text) - 5).ToString();
             }
 
             Check();
@@ -198,11 +205,11 @@ namespace Quiz
             if (odg4.Text.Equals(str))
             {
                 points += 10;
-                pointsBox.Text = (short.Parse(pointsBox.Text) + 10).ToString();
+                lblPoeni.Text = (short.Parse(lblPoeni.Text) + 10).ToString();
             }
             else {
                 points -= 5;
-                pointsBox.Text = (short.Parse(pointsBox.Text) - 5).ToString();
+                lblPoeni.Text = (short.Parse(lblPoeni.Text) - 5).ToString();
             }
 
             Check();
@@ -211,7 +218,7 @@ namespace Quiz
         private void btnSledna_Click(object sender, EventArgs e)
         {
             this.Hide();
-            spojuvalka = new Spojuvalka(this.points);
+            spojuvalka = new Spojuvalka(this.points, this.korisnickoIme);
             spojuvalka.Show();
         }
     }

@@ -97,6 +97,12 @@
     <Compile Include="Spojuvalka.Designer.cs">
       <DependentUpon>Spojuvalka.cs</DependentUpon>
     </Compile>
+    <Compile Include="VnesiIme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VnesiIme.Designer.cs">
+      <DependentUpon>VnesiIme.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Asocijacii.resx">
       <DependentUpon>Asocijacii.cs</DependentUpon>
     </EmbeddedResource>
@@ -129,6 +135,9 @@
     </Compile>
     <EmbeddedResource Include="Spojuvalka.resx">
       <DependentUpon>Spojuvalka.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VnesiIme.resx">
+      <DependentUpon>VnesiIme.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

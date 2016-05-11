@@ -12,8 +12,7 @@ namespace Quiz
 {
     public partial class Pocetna : Form
     {
-        public Pogodi pogodi;
-
+        public VnesiIme vi;
         public Pocetna()
         {
             InitializeComponent();
@@ -22,8 +21,13 @@ namespace Quiz
         private void button1_Click(object sender, EventArgs e)
         {
             this.Hide();
-            pogodi = new Pogodi();
-            pogodi.Show();
+            vi = new VnesiIme();
+            vi.ShowDialog(this);
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

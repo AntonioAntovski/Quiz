@@ -30,10 +30,10 @@
         {
             this.components = new System.ComponentModel.Container();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.lblPoeni = new System.Windows.Forms.Label();
             this.btnSledna = new System.Windows.Forms.Button();
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.label2 = new System.Windows.Forms.Label();
-            this.txtPoeni = new System.Windows.Forms.TextBox();
             this.btnIzbrisi = new System.Windows.Forms.Button();
             this.txtBaranBroj = new System.Windows.Forms.TextBox();
             this.txtKonecen = new System.Windows.Forms.TextBox();
@@ -59,10 +59,10 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.lblPoeni);
             this.groupBox1.Controls.Add(this.btnSledna);
             this.groupBox1.Controls.Add(this.progressBar1);
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.txtPoeni);
             this.groupBox1.Controls.Add(this.btnIzbrisi);
             this.groupBox1.Controls.Add(this.txtBaranBroj);
             this.groupBox1.Controls.Add(this.txtKonecen);
@@ -87,7 +87,15 @@
             this.groupBox1.Size = new System.Drawing.Size(686, 455);
             this.groupBox1.TabIndex = 18;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Player1";
+            // 
+            // lblPoeni
+            // 
+            this.lblPoeni.AutoSize = true;
+            this.lblPoeni.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPoeni.Location = new System.Drawing.Point(620, 31);
+            this.lblPoeni.Name = "lblPoeni";
+            this.lblPoeni.Size = new System.Drawing.Size(0, 24);
+            this.lblPoeni.TabIndex = 36;
             // 
             // btnSledna
             // 
@@ -110,21 +118,11 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label2.Location = new System.Drawing.Point(502, 30);
+            this.label2.Location = new System.Drawing.Point(563, 35);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(127, 20);
+            this.label2.Size = new System.Drawing.Size(61, 20);
             this.label2.TabIndex = 33;
-            this.label2.Text = "Освоени поени:";
-            // 
-            // txtPoeni
-            // 
-            this.txtPoeni.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.txtPoeni.Location = new System.Drawing.Point(635, 19);
-            this.txtPoeni.Multiline = true;
-            this.txtPoeni.Name = "txtPoeni";
-            this.txtPoeni.ReadOnly = true;
-            this.txtPoeni.Size = new System.Drawing.Size(35, 31);
-            this.txtPoeni.TabIndex = 32;
+            this.label2.Text = "Поени:";
             // 
             // btnIzbrisi
             // 
@@ -373,9 +371,9 @@
         private System.Windows.Forms.TextBox txtBaranBroj;
         private System.Windows.Forms.Button btnIzbrisi;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtPoeni;
         private System.Windows.Forms.ProgressBar progressBar1;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Button btnSledna;
+        private System.Windows.Forms.Label lblPoeni;
     }
 }

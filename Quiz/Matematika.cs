@@ -14,17 +14,21 @@ namespace Quiz
     {
         public int points;
         public Prashanja prashanja;
-
-        public Matematika(int points)
+        public string korisnickoIme;
+        public Matematika(int points, string ime)
         {
             InitializeComponent();
+            korisnickoIme = ime;
             this.points = points;
-            txtPoeni.Text = points.ToString();
+            lblPoeni.Text = points.ToString();
+            btnIzbrisi.Enabled = false;
+            btnSledna.Enabled = false;
         }
 
         private void btnStart_Click(object sender, EventArgs e)
         {
             timer1.Start();
+            btnIzbrisi.Enabled = true;
             Random rd = new Random();
             txtPrv.Text = rd.Next(1, 10).ToString();
             txtPrv.Enabled = true;
@@ -163,8 +167,12 @@ namespace Quiz
                 this.points += 5;
             else
                 this.points += 0;
-            txtPoeni.Text = this.points.ToString();
+
+          
+            lblPoeni.Text = this.points.ToString();
             progressBar1.Value = 100;
+            btnKraj.Enabled = false;
+            btnSledna.Enabled = true;
         }
 
         private void btnIzbrisi_Click(object sender, EventArgs e)
@@ -181,11 +189,14 @@ namespace Quiz
         private void timer1_Tick(object sender, EventArgs e)
         {
             progressBar1.Increment(1);
-            if(progressBar1.Value == 100 && txtPoeni.Text == "")
+            if(progressBar1.Value == 100 && lblPoeni.Text == "")
             {
                 DisableAll();
-                txtPoeni.Text = "0";
+                lblPoeni.Text = "0";
+                btnSledna.Enabled = true;
             }
+            if (progressBar1.Value == 100)
+                btnSledna.Enabled = true;
         }
 
         private void DisableAll()
@@ -207,8 +218,9 @@ namespace Quiz
 
         private void btnSledna_Click(object sender, EventArgs e)
         {
+            
             this.Hide();
-            prashanja = new Prashanja(this.points);
+            prashanja = new Prashanja(this.points, this.korisnickoIme);
             prashanja.Show();
         }
     }

@@ -17,19 +17,21 @@ namespace Quiz
         char[] guess;
         public int points;
         public Matematika matematika;
-
-        public Pogodi()
+        public string korisnickoIme;
+        public Pogodi(string ime)
         {
             InitializeComponent();
+            korisnickoIme = ime;
+            btnSledna.Enabled = false;
             count = 0;
             textBox2.Enabled = false;
-            textBox3.Enabled = false;
+            btnProveri.Enabled = false;
             this.points = 0;
             words = new List<char[]>();
             String word;
-
+            lblPoeni.Font = new Font("Microsoft Sans Serif", 14);
+            lblPoeni.Text = "0";
             this.StartPosition = FormStartPosition.CenterScreen;
-            
 
             word = "слика";
             words.Add(word.ToCharArray());
@@ -49,6 +51,7 @@ namespace Quiz
         private void button63_Click(object sender, EventArgs e)
         {
             textBox2.Enabled = true;
+            btnProveri.Enabled = true;
             timer1.Start();
             btnZapocni.Enabled = false;
         }
@@ -59,6 +62,7 @@ namespace Quiz
             if (progressBar1.Value == 100) {
                 btnProveri.Enabled = false;
                 btnZapocni.Enabled = false;
+                btnSledna.Enabled = true;
             }
         }
 
@@ -85,11 +89,13 @@ namespace Quiz
                     w14.BackColor.Equals(Color.Green) &&
                     w14.BackColor.Equals(Color.Green)) {
 
-                    btnProveri.Enabled = btnZapocni.Enabled = false;
+                    btnProveri.Enabled = false;
+                    btnZapocni.Enabled = false;
                     timer1.Stop();
                     textBox2.Enabled = false;
                     this.points += 60;
-                    textBox3.Text = this.points.ToString();
+                    lblPoeni.Text = this.points.ToString();
+                    progressBar1.Value = 100;
                 }
             }
             if (count == 1)
@@ -111,11 +117,13 @@ namespace Quiz
                     w24.BackColor.Equals(Color.Green) &&
                     w25.BackColor.Equals(Color.Green)) {
 
-                    btnProveri.Enabled = btnZapocni.Enabled = false;
+                    btnProveri.Enabled = false;
+                    btnZapocni.Enabled = false;
                     timer1.Stop();
                     textBox2.Enabled = false;
                     this.points += 50;
-                    textBox3.Text = points.ToString();
+                    lblPoeni.Text = this.points.ToString();
+                    progressBar1.Value = 100;
                 }
             }
             if (count == 2)
@@ -137,11 +145,13 @@ namespace Quiz
                     w34.BackColor.Equals(Color.Green) &&
                     w35.BackColor.Equals(Color.Green)) {
 
-                    btnProveri.Enabled = btnZapocni.Enabled = false;
+                    btnProveri.Enabled = false;
+                    btnZapocni.Enabled = false;
                     timer1.Stop();
                     textBox2.Enabled = false;
                     this.points += 40;
-                    textBox3.Text = this.points.ToString();
+                    lblPoeni.Text = this.points.ToString();
+                    progressBar1.Value = 100;
                 }
             }
             if (count == 3)
@@ -163,11 +173,13 @@ namespace Quiz
                     w44.BackColor.Equals(Color.Green) &&
                     w45.BackColor.Equals(Color.Green)) {
 
-                    btnProveri.Enabled = btnZapocni.Enabled = false;
+                    btnProveri.Enabled = false;
+                    btnZapocni.Enabled = false;
                     timer1.Stop();
                     textBox2.Enabled = false;
                     this.points += 30;
-                    textBox3.Text = this.points.ToString();
+                    lblPoeni.Text = this.points.ToString();
+                    progressBar1.Value = 100;
                 }
             }
             if (count == 4)
@@ -189,10 +201,12 @@ namespace Quiz
                     w54.BackColor.Equals(Color.Green) &&
                     w55.BackColor.Equals(Color.Green)) {
 
-                    btnProveri.Enabled = btnZapocni.Enabled = false;
+                    btnProveri.Enabled = false;
+                    btnZapocni.Enabled = false;
                     timer1.Stop();
                     this.points += 20;
-                    textBox3.Text = this.points.ToString();
+                    lblPoeni.Text = this.points.ToString();
+                    progressBar1.Value = 100;
                 }
             }
 
@@ -202,12 +216,12 @@ namespace Quiz
                 w62.Text = word[1].ToString();
                 w63.Text = word[2].ToString();
                 w64.Text = word[3].ToString();
-                w64.Text = word[4].ToString();
+                w65.Text = word[4].ToString();
                 w61.BackColor = getColor(word, 0);
                 w62.BackColor = getColor(word, 1);
                 w63.BackColor = getColor(word, 2);
                 w64.BackColor = getColor(word, 3);
-                w64.BackColor = getColor(word, 4);
+                w65.BackColor = getColor(word, 4);
 
                 if (w61.BackColor.Equals(Color.Green) &&
                     w62.BackColor.Equals(Color.Green) &&
@@ -215,19 +229,24 @@ namespace Quiz
                     w64.BackColor.Equals(Color.Green) &&
                     w65.BackColor.Equals(Color.Green)) {
 
-                    btnProveri.Enabled = btnZapocni.Enabled = false;
+                    btnProveri.Enabled = false;
+                    btnZapocni.Enabled = false;
                     timer1.Stop();
                     textBox2.Enabled = false;
                     this.points += 10;
-                    textBox3.Text = this.points.ToString();
+                    lblPoeni.Text = this.points.ToString();
+                    progressBar1.Value = 100;
                 }
 
                 btnProveri.Enabled = false;
                 timer1.Stop();
+                progressBar1.Value = 100;
             }
 
             textBox2.Text = "";
-            count++;            
+            count++;
+            if (progressBar1.Value == 100)
+                btnSledna.Enabled = true;
         }
 
         public Color getColor(char[] word, int pos) {
@@ -259,7 +278,7 @@ namespace Quiz
         private void btnSledna_Click(object sender, EventArgs e)
         {
             this.Hide();
-            matematika = new Matematika(this.points);
+            matematika = new Matematika(this.points,this.korisnickoIme);
             matematika.Show();
         }
     }
