@@ -359,11 +359,10 @@
             this.txtKonecno.BackColor = System.Drawing.Color.White;
             this.txtKonecno.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.txtKonecno.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.txtKonecno.Location = new System.Drawing.Point(14, 338);
+            this.txtKonecno.Location = new System.Drawing.Point(14, 346);
             this.txtKonecno.Margin = new System.Windows.Forms.Padding(0);
-            this.txtKonecno.Multiline = true;
             this.txtKonecno.Name = "txtKonecno";
-            this.txtKonecno.Size = new System.Drawing.Size(680, 40);
+            this.txtKonecno.Size = new System.Drawing.Size(680, 22);
             this.txtKonecno.TabIndex = 24;
             this.txtKonecno.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txtKonecno.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtKonecno_KeyPress);
@@ -448,7 +447,7 @@
             // 
             // timer1
             // 
-            this.timer1.Interval = 2400;
+            this.timer1.Interval = 1200;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // label2
@@ -489,11 +488,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(710, 479);
+            this.Controls.Add(this.Konecno);
             this.Controls.Add(this.lblPoeni);
             this.Controls.Add(this.btnKraj);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.progressBar1);
-            this.Controls.Add(this.Konecno);
             this.Controls.Add(this.txtKonecno);
             this.Controls.Add(this.btnV4);
             this.Controls.Add(this.btnV3);

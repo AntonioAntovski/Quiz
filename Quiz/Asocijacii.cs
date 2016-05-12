@@ -275,62 +275,7 @@ namespace Quiz
             {
                 if (txtKonecno.Text.ToUpper().Equals(konecna.Konecno))
                 {
-                    Konecno.BackColor = Color.Green;
-                    Konecno.Enabled = false;
-                    Konecno.Visible = true;
-                    Konecno.Text = konecna.Konecno;
-
-                    btnA1.BackColor = Color.Green;
-                    btnA1.Text = konecna.A[0];
-                    btnA2.BackColor = Color.Green;
-                    btnA2.Text = konecna.A[1];
-                    btnA3.BackColor = Color.Green;
-                    btnA3.Text = konecna.A[2];
-                    btnA4.BackColor = Color.Green;
-                    btnA4.Text = konecna.A[3];
-                    A.BackColor = Color.Green;
-                    A.Enabled = false;
-                    A.Visible = true;
-                    A.Text = konecna.A[4];
-
-                    btnB1.BackColor = Color.Green;
-                    btnB1.Text = konecna.B[0];
-                    btnB2.BackColor = Color.Green;
-                    btnB2.Text = konecna.B[1];
-                    btnB3.BackColor = Color.Green;
-                    btnB3.Text = konecna.B[2];
-                    btnB4.BackColor = Color.Green;
-                    btnB4.Text = konecna.B[3];
-                    B.BackColor = Color.Green;
-                    B.Enabled = false;
-                    B.Visible = true;
-                    B.Text = konecna.B[4];
-
-                    btnV1.BackColor = Color.Green;
-                    btnV1.Text = konecna.V[0];
-                    btnV2.BackColor = Color.Green;
-                    btnV2.Text = konecna.V[1];
-                    btnV3.BackColor = Color.Green;
-                    btnV3.Text = konecna.V[2];
-                    btnV4.BackColor = Color.Green;
-                    btnV4.Text = konecna.V[3];
-                    V.BackColor = Color.Green;
-                    V.Enabled = false;
-                    V.Visible = true;
-                    V.Text = konecna.V[4];
-
-                    btnG1.BackColor = Color.Green;
-                    btnG1.Text = konecna.G[0];
-                    btnG2.BackColor = Color.Green;
-                    btnG2.Text = konecna.G[1];
-                    btnG3.BackColor = Color.Green;
-                    btnG3.Text = konecna.G[2];
-                    btnG4.BackColor = Color.Green;
-                    btnG4.Text = konecna.G[3];
-                    G.BackColor = Color.Green;
-                    G.Enabled = false;
-                    G.Visible = true;
-                    G.Text = konecna.G[4];
+                    enterSolution();
                     if (obidi == 0)
                         points += 30;
                     else if (obidi == 1)
@@ -352,10 +297,10 @@ namespace Quiz
         private void timer1_Tick(object sender, EventArgs e)
         {
             progressBar1.Increment(1);
-            if(progressBar1.Value == 100 && lblPoeni.Text == "")
+            if(progressBar1.Value == 100)
             {
-                lblPoeni.Text = "0";
-                this.points = 0;
+                enterSolution();
+                this.points += 0;
             }
         }
 
@@ -375,6 +320,66 @@ namespace Quiz
 
             kraj = new Kraj();
             kraj.Show();
+        }
+
+        private void enterSolution()
+        {
+            Konecno.BackColor = Color.Green;
+            Konecno.Enabled = false;
+            Konecno.Visible = true;
+            Konecno.Text = konecna.Konecno;
+
+            btnA1.BackColor = Color.Green;
+            btnA1.Text = konecna.A[0];
+            btnA2.BackColor = Color.Green;
+            btnA2.Text = konecna.A[1];
+            btnA3.BackColor = Color.Green;
+            btnA3.Text = konecna.A[2];
+            btnA4.BackColor = Color.Green;
+            btnA4.Text = konecna.A[3];
+            A.BackColor = Color.Green;
+            A.Enabled = false;
+            A.Visible = true;
+            A.Text = konecna.A[4];
+
+            btnB1.BackColor = Color.Green;
+            btnB1.Text = konecna.B[0];
+            btnB2.BackColor = Color.Green;
+            btnB2.Text = konecna.B[1];
+            btnB3.BackColor = Color.Green;
+            btnB3.Text = konecna.B[2];
+            btnB4.BackColor = Color.Green;
+            btnB4.Text = konecna.B[3];
+            B.BackColor = Color.Green;
+            B.Enabled = false;
+            B.Visible = true;
+            B.Text = konecna.B[4];
+
+            btnV1.BackColor = Color.Green;
+            btnV1.Text = konecna.V[0];
+            btnV2.BackColor = Color.Green;
+            btnV2.Text = konecna.V[1];
+            btnV3.BackColor = Color.Green;
+            btnV3.Text = konecna.V[2];
+            btnV4.BackColor = Color.Green;
+            btnV4.Text = konecna.V[3];
+            V.BackColor = Color.Green;
+            V.Enabled = false;
+            V.Visible = true;
+            V.Text = konecna.V[4];
+
+            btnG1.BackColor = Color.Green;
+            btnG1.Text = konecna.G[0];
+            btnG2.BackColor = Color.Green;
+            btnG2.Text = konecna.G[1];
+            btnG3.BackColor = Color.Green;
+            btnG3.Text = konecna.G[2];
+            btnG4.BackColor = Color.Green;
+            btnG4.Text = konecna.G[3];
+            G.BackColor = Color.Green;
+            G.Enabled = false;
+            G.Visible = true;
+            G.Text = konecna.G[4];
         }
     }
 }
