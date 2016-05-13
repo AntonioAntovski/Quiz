@@ -453,10 +453,10 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label2.Location = new System.Drawing.Point(574, 26);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(61, 20);
+            this.label2.Size = new System.Drawing.Size(53, 16);
             this.label2.TabIndex = 35;
             this.label2.Text = "Поени:";
             // 
@@ -475,12 +475,11 @@
             // lblPoeni
             // 
             this.lblPoeni.AutoSize = true;
-            this.lblPoeni.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPoeni.Location = new System.Drawing.Point(630, 22);
+            this.lblPoeni.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPoeni.Location = new System.Drawing.Point(633, 26);
             this.lblPoeni.Name = "lblPoeni";
-            this.lblPoeni.Size = new System.Drawing.Size(60, 24);
+            this.lblPoeni.Size = new System.Drawing.Size(0, 16);
             this.lblPoeni.TabIndex = 37;
-            this.lblPoeni.Text = "label1";
             // 
             // Asocijacii
             // 
@@ -526,6 +525,7 @@
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Асоцијации";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Asocijacii_FormClosing);
             this.ResumeLayout(false);
             this.PerformLayout();
 

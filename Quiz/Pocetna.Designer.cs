@@ -87,6 +87,7 @@
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Почетна";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Pocetna_FormClosing);
             this.ResumeLayout(false);
 
         }

@@ -29,7 +29,6 @@ namespace Quiz
             this.points = 0;
             words = new List<char[]>();
             String word;
-            lblPoeni.Font = new Font("Microsoft Sans Serif", 14);
             lblPoeni.Text = "0";
             this.StartPosition = FormStartPosition.CenterScreen;
 
@@ -325,6 +324,26 @@ namespace Quiz
             matematika = new Matematika(this.points,this.korisnickoIme);
             matematika.Show();
         }
+
+        private void Pogodi_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (e.CloseReason == CloseReason.UserClosing)
+            {
+                DialogResult result = MessageBox.Show("Дали навистина сакате да ја напуштите играта?", "Излез", MessageBoxButtons.YesNo);
+                if (result == DialogResult.Yes)
+                {
+                    Application.Exit();
+                }
+                else
+                {
+                    e.Cancel = true;
+                }
+            }
+            else
+            {
+                e.Cancel = true;
+            }
+        }
     }
 
     class Word {
@@ -353,11 +372,9 @@ namespace Quiz
     }
 
     class Character {
-        //Color color;
         Char c;
 
         public Character(Char c, Color color) {
-            //this->color = color;
             this.c = c;
         }
     }

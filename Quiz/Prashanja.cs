@@ -245,6 +245,26 @@ namespace Quiz
             spojuvalka = new Spojuvalka(this.points, this.korisnickoIme);
             spojuvalka.Show();
         }
+
+        private void Prashanja_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (e.CloseReason == CloseReason.UserClosing)
+            {
+                DialogResult result = MessageBox.Show("Дали навистина сакате да ја напуштите играта?", "Излез", MessageBoxButtons.YesNo);
+                if (result == DialogResult.Yes)
+                {
+                    Application.Exit();
+                }
+                else
+                {
+                    e.Cancel = true;
+                }
+            }
+            else
+            {
+                e.Cancel = true;
+            }
+        }
     }
 
     class Question {

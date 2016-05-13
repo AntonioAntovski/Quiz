@@ -22,7 +22,7 @@ namespace Quiz
             InitializeComponent();
             korisnickoIme = ime;
             this.points = points;
-            lblPoeni.Text = points.ToString();
+            lblP.Text = points.ToString();
             btnIzbrisi.Enabled = false;
             btnSledna.Enabled = false;
             flag = 0;
@@ -200,8 +200,7 @@ namespace Quiz
             else
                 this.points += 0;
 
-          
-            lblPoeni.Text = this.points.ToString();
+            lblP.Text = this.points.ToString();
             progressBar1.Value = 100;
             btnKraj.Enabled = false;
             btnSledna.Enabled = true;
@@ -222,10 +221,10 @@ namespace Quiz
         private void timer1_Tick(object sender, EventArgs e)
         {
             progressBar1.Increment(1);
-            if(progressBar1.Value == 100 && lblPoeni.Text == "")
+            if(progressBar1.Value == 100 && lblP.Text == "")
             {
                 DisableAll();
-                lblPoeni.Text = "0";
+                lblP.Text = "0";
                 btnSledna.Enabled = true;
             }
             if (progressBar1.Value == 100)
@@ -255,6 +254,26 @@ namespace Quiz
             this.Hide();
             prashanja = new Prashanja(this.points, this.korisnickoIme);
             prashanja.Show();
+        }
+
+        private void Matematika_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (e.CloseReason == CloseReason.UserClosing)
+            {
+                DialogResult result = MessageBox.Show("Дали навистина сакате да ја напуштите играта?", "Излез", MessageBoxButtons.YesNo);
+                if (result == DialogResult.Yes)
+                {
+                    Application.Exit();
+                }
+                else
+                {
+                    e.Cancel = true;
+                }
+            }
+            else
+            {
+                e.Cancel = true;
+            }
         }
     }
 }

@@ -25,7 +25,7 @@ namespace Quiz
             List<Poim> p1;
             List<Poim> p2;
             populateLists(komb, out p1, out p2);
-
+            btnNextGame.Enabled = false;
              kraj1 = new List<Poim>();
              kraj2 = new List<Poim>();
 
@@ -305,6 +305,7 @@ namespace Quiz
                             txtBoxSign.Enabled = false;
                             lstLevo.Enabled = false;
                             lstDesno.Enabled = false;
+                            btnNextGame.Enabled = true;
                         }
                 }
                 else

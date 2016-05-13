@@ -30,7 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.lblPoeni = new System.Windows.Forms.Label();
+            this.lblP = new System.Windows.Forms.Label();
             this.btnSledna = new System.Windows.Forms.Button();
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.label2 = new System.Windows.Forms.Label();
@@ -59,7 +59,7 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.lblPoeni);
+            this.groupBox1.Controls.Add(this.lblP);
             this.groupBox1.Controls.Add(this.btnSledna);
             this.groupBox1.Controls.Add(this.progressBar1);
             this.groupBox1.Controls.Add(this.label2);
@@ -88,14 +88,15 @@
             this.groupBox1.TabIndex = 18;
             this.groupBox1.TabStop = false;
             // 
-            // lblPoeni
+            // lblP
             // 
-            this.lblPoeni.AutoSize = true;
-            this.lblPoeni.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPoeni.Location = new System.Drawing.Point(633, 19);
-            this.lblPoeni.Name = "lblPoeni";
-            this.lblPoeni.Size = new System.Drawing.Size(0, 24);
-            this.lblPoeni.TabIndex = 36;
+            this.lblP.AutoSize = true;
+            this.lblP.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblP.Location = new System.Drawing.Point(633, 27);
+            this.lblP.Name = "lblP";
+            this.lblP.Size = new System.Drawing.Size(45, 16);
+            this.lblP.TabIndex = 37;
+            this.lblP.Text = "label3";
             // 
             // btnSledna
             // 
@@ -452,6 +453,7 @@
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Математика";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Matematika_FormClosing);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
@@ -484,6 +486,6 @@
         private System.Windows.Forms.ProgressBar progressBar1;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Button btnSledna;
-        private System.Windows.Forms.Label lblPoeni;
+        private System.Windows.Forms.Label lblP;
     }
 }

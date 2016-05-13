@@ -23,6 +23,7 @@ namespace Quiz
             InitializeComponent();
             korisnickoIme = ime;
             this.points = points;
+            btnKraj.Enabled = false;
             lblPoeni.Text = points.ToString();
             string[] a11 = { "СПОРТСКИ", "БРОЈ", "МАИЦА", "РЕПРЕЗЕНТАЦИЈА", "ДРЕС" };
             string[] b11 = { "ИТАЛИЈА", "ТАЈНАТА ВЕЧЕРА", "МОНА ЛИЗА", "РЕНЕСАНСА", "ДА ВИНЧИ" };
@@ -301,6 +302,7 @@ namespace Quiz
             {
                 enterSolution();
                 this.points += 0;
+                btnKraj.Enabled = true;
             }
         }
 
@@ -380,6 +382,26 @@ namespace Quiz
             G.Enabled = false;
             G.Visible = true;
             G.Text = konecna.G[4];
+        }
+
+        private void Asocijacii_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (e.CloseReason == CloseReason.UserClosing)
+            {
+                DialogResult result = MessageBox.Show("Дали навистина сакате да ја напуштите играта?", "Излез", MessageBoxButtons.YesNo);
+                if (result == DialogResult.Yes)
+                {
+                    Application.Exit();
+                }
+                else
+                {
+                    e.Cancel = true;
+                }
+            }
+            else
+            {
+                e.Cancel = true;
+            }
         }
     }
 }
