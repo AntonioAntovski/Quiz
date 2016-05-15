@@ -279,10 +279,6 @@ namespace Quiz
         private List<string> answers;
         private string right;
 
-        private static readonly Random random = new Random();
-        private static readonly object syncLock = new object();
-
-
         public Answers(string fi, string s, string t, string f) {
             answers = new List<string>()
             {

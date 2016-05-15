@@ -39,7 +39,6 @@ namespace Quiz
         private void populateLists(int rr, out List<Poim> p1, out List<Poim> p2)
         {
             p1 = new List<Poim>();
-            Random rand = new Random();
             p2 = new List<Poim>();
             if (rr == 1)
             {
@@ -230,40 +229,40 @@ namespace Quiz
         }
         private void fillLeft()
         {
-            List<Poim> dare = new List<Poim>();
+            List<Poim> tempList = new List<Poim>();
             for (int i = 0; i < lstLevo.Items.Count; i++)
             {
-                dare.Add(lstLevo.Items[i] as Poim);
+                tempList.Add(lstLevo.Items[i] as Poim);
             }
             Poim qwe = lstLevo.SelectedItem as Poim;
-            dare.Remove(qwe);
+            tempList.Remove(qwe);
 
-            List<Poim> dare2 = new List<Poim>();
+            List<Poim> tempList2 = new List<Poim>();
 
-            for (int i = 0; i < dare.Count; i++)
-                dare2.Add(new Poim { Value = dare[i].Value, Ind = dare[i].Ind });
+            for (int i = 0; i < tempList.Count; i++)
+                tempList2.Add(new Poim { Value = tempList[i].Value, Ind = tempList[i].Ind });
             lstLevo.Items.Clear();
-            lstLevo.Items.AddRange(dare2.ToArray());
+            lstLevo.Items.AddRange(tempList2.ToArray());
             lstLevo.DisplayMember = "Value";
             lstLevo.ValueMember = "Ind";
         }
 
         private void fillRight()
         {
-            List<Poim> tamara = new List<Poim>();
+            List<Poim> tempList = new List<Poim>();
             for (int i = 0; i < lstDesno.Items.Count; i++)
             {
-                tamara.Add(lstDesno.Items[i] as Poim);
+                tempList.Add(lstDesno.Items[i] as Poim);
             }
             Poim qwee = lstDesno.SelectedItem as Poim;
-            tamara.Remove(qwee);
+            tempList.Remove(qwee);
 
-            List<Poim> tamara2 = new List<Poim>();
+            List<Poim> tempList2 = new List<Poim>();
 
-            for (int i = 0; i < tamara.Count; i++)
-                tamara2.Add(new Poim { Value = tamara[i].Value, Ind = tamara[i].Ind });
+            for (int i = 0; i < tempList.Count; i++)
+                tempList2.Add(new Poim { Value = tempList[i].Value, Ind = tempList[i].Ind });
             lstDesno.Items.Clear();
-            lstDesno.Items.AddRange(tamara2.ToArray());
+            lstDesno.Items.AddRange(tempList2.ToArray());
             lstDesno.DisplayMember = "Value";
             lstDesno.ValueMember = "Ind";
         }
